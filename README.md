@@ -3,7 +3,7 @@ Overview**
 
 This project is a home-built SIEM and honeypot lab designed to gain hands-on detection engineering and incident analysis experience for security analyst roles. It combines an open-source SIEM (Wazuh) monitoring a real endpoint with detailed telemetry (Sysmon), alongside a separate, internet-facing SSH honeypot (Cowrie) used to capture and analyze real attacker behavior rather than simulated data. The goal was to move beyond theoretical coursework and build practical, defensible experience with the same tools and workflows used in real SOC/detection engineering environments — deployment, configuration, troubleshooting, and analysis of genuine attack traffic.
 
-Key Findings
+**Key Findings**
 Identified and remediated a default-credential vulnerability (admin/admin) on the Wazuh management dashboard before exposing any part of the stack to real traffic
 Wazuh + Sysmon integration mapped endpoint activity to 616 Privilege Escalation and 605 Defense Evasion events (MITRE ATT&CK) on a single monitored endpoint in 24 hours
 CIS Microsoft Windows 11 Enterprise Benchmark v3.0.0 scan returned a 25% compliance score (122 passed / 350 failed / 10 not applicable) on a default Windows 11 install — a concrete, quantified hardening gap
@@ -13,7 +13,7 @@ An SSH key persistence (backdoor) attempt
 Evidence of anti-honeypot reconnaissance tooling
 Full findings, IOCs, and remediation recommendations documented in [incident-analysis.md](url)
 
-Tech Stack
+**Tech Stack**
 SIEM: Wazuh (manager + dashboard)
 Endpoint telemetry: Sysmon (Windows)
 Honeypot: Cowrie (SSH)
@@ -37,7 +37,7 @@ Deployed a public-facing Cowrie SSH honeypot on a cloud VM, including moving rea
 Captured and analyzed real, unsolicited attacker sessions within hours of deployment, identifying credential-stuffing patterns, an SSH key persistence (backdoor) attempt, and evidence of anti-honeypot reconnaissance tooling.
 Documented findings in a formal incident analysis, including indicators of compromise and remediation recommendations.
 
-Setup / Reproduction
+**Setup / Reproduction**
 
 High-level steps to reproduce this lab. Substitute your own IPs, credentials, and hostnames.
 
