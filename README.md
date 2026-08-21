@@ -10,6 +10,7 @@ Cowrie SSH honeypot — deployed on a public-facing DigitalOcean cloud VM (dropl
 [ Personal Laptop ] --Sysmon + Wazuh Agent--> [ Wazuh Manager/Dashboard (VirtualBox VM) ]
 
 [ Internet ] --> [ Cowrie Honeypot (DigitalOcean Droplet) ] --> cowrie.json logs
+
 **What I Built**
 Deployed and secured a Wazuh SIEM, including identifying and remediating a default-credential vulnerability (admin/admin) on the management dashboard using the platform's official password-reset tooling.
 Connected a real endpoint to the SIEM and integrated Sysmon to capture process creation, network connections, and other high-fidelity telemetry that Windows' default logging does not provide.
