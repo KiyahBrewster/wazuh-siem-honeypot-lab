@@ -11,7 +11,7 @@ Cowrie honeypot, exposed on a public DigitalOcean droplet, captured real unsolic
 Credential-stuffing attempts
 An SSH key persistence (backdoor) attempt
 Evidence of anti-honeypot reconnaissance tooling
-Full findings, IOCs, and remediation recommendations documented in [incident-analysis.md](url)
+Full findings, IOCs, and remediation recommendations documented in [incident-analysis.md](./incident-analysis.md)
 
 **Tech Stack**
 SIEM: Wazuh (manager + dashboard)
@@ -72,7 +72,7 @@ Run a Security Configuration Assessment scan against the endpoint to get a CIS b
 
 Use Wazuh's Threat Hunting / MITRE ATT&CK views to triage and tag alerts by tactic
 Review Cowrie logs for attacker sessions, credential attempts, and any commands executed
-Document findings, IOCs, and remediation steps (see [incident-analysis.md](url))
+Document findings, IOCs, and remediation steps (see [incident-analysis.md](./incident-analysis.md))
 
 ## Screenshots
 <img width="2554" height="1394" alt="image" src="https://github.com/user-attachments/assets/d17495f6-09d6-4541-9688-d42ba6756e07" />
