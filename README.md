@@ -19,5 +19,7 @@ Captured and analyzed real, unsolicited attacker sessions within hours of deploy
 Documented findings in a formal incident analysis, including indicators of compromise and remediation recommendations.
 
 ## Screenshots
-A few of your best ones — Wazuh dashboard, agent list,
-the honeypot session, log excerpts.
+<img width="2554" height="1394" alt="image" src="https://github.com/user-attachments/assets/d17495f6-09d6-4541-9688-d42ba6756e07" />
+
+<img width="2559" height="1328" alt="image" src="https://github.com/user-attachments/assets/6b3c56d0-ab6f-42f9-82f7-38570c31a052" />
+
