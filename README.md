@@ -22,7 +22,7 @@ Cloud hosting: DigitalOcean (honeypot droplet)
 Network/traffic control: iptables (port redirection for honeypot)
 OS monitored: Windows 11 Home
 
-**Architecture**
+**Architecture**:
 Wazuh manager + dashboard — deployed as a VirtualBox VM on a local network, providing centralized log collection, alerting, and a web dashboard for analysis.
 Monitored endpoint — a personal Windows laptop running the Wazuh agent, enhanced with Sysmon for high-fidelity process, network, and system-level telemetry beyond Windows' default event logging.
 Cowrie SSH honeypot — deployed on a public-facing DigitalOcean cloud VM (droplet), intentionally exposed to the open internet to attract and capture real, unsolicited attacker traffic rather than staged activity.
@@ -30,7 +30,7 @@ Cowrie SSH honeypot — deployed on a public-facing DigitalOcean cloud VM (dropl
 
 [ Internet ] --> [ Cowrie Honeypot (DigitalOcean Droplet) ] --> cowrie.json logs
 
-**What I Built**
+**What I Built**:
 Deployed and secured a Wazuh SIEM, including identifying and remediating a default-credential vulnerability (admin/admin) on the management dashboard using the platform's official password-reset tooling.
 Connected a real endpoint to the SIEM and integrated Sysmon to capture process creation, network connections, and other high-fidelity telemetry that Windows' default logging does not provide.
 Deployed a public-facing Cowrie SSH honeypot on a cloud VM, including moving real administrative SSH access to a non-standard port and configuring iptables traffic redirection so the honeypot could safely impersonate a standard SSH service.
