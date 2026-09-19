@@ -1,4 +1,4 @@
-# Incident Analysis: Cowrie Honeypot Capture Report
+# Investigation Report: Cowrie Honeypot Capture Report
 
 **Sensor:** Cowrie SSH honeypot (DigitalOcean droplet, Ubuntu 24.04)
 **Capture window:** August 21, 2026, 06:04 UTC – 06:48 UTC (~44 minutes)
